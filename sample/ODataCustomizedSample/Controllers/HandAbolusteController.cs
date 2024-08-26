@@ -7,9 +7,11 @@
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OData.Routing.Attributes;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ODataCustomizedSample.Controllers
 {
+    [Authorize]
     [Route("convention")]
     [Route("explicit")]
     [Route("odata")]
